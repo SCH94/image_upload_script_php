@@ -1,0 +1,97 @@
+
+body {
+	background-color: DarkSlateGrey;
+	
+}
+
+.hefo {
+         border-style: solid;	
+	 border-width: thin;
+	 border-color: black;
+	 border-radius: 10px;
+	 background-color: rgba(51, 51, 51, 0.5);
+	 width:100%;
+	 height: 70px;
+	 margin-top: -20px;
+}
+
+h4 {
+      margin: auto;
+      padding-top: 25px; 
+      font-family: Ariel, sans-serif;
+      color: white;
+      text-align: center;
+}
+
+.main {
+       border-style: dashed;
+       border-width: thin;
+       border-radius: 5px;
+       width: 20%;
+       background-color: rgba(51, 51, 51, 0.5);
+       margin-top: 10%; 
+}
+
+input {
+	border-radius: 5px;
+}
+
+.addroom {
+	   font-family: Ariel, Helvetica, serif;
+	   color: white;
+	   margin-top: 8px;	   
+}
+
+.ed {
+	border-style:solid;
+	border-width:thin;
+	border-color:#00CCFF;
+	padding:5px;
+	margin-bottom: 4px;
+ }
+
+.button1 {
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	border-style:solid;
+	border-width:thin;
+	border-color:#00CCFF;
+	padding:5px;
+	background-color:#00CCFF;
+	height: 34px;
+ }
+
+.logbut {
+  font-family: Ariel, Helvetica, serif;
+  position: relative;
+  float: right;
+  bottom: 25px;
+  right: 10px;   
+}
+
+.lgin {
+  width: 90px;
+}
+
+fieldset {
+	    border-style: dashed;
+	    border-color: black;
+	    border-width: 0px;
+	    width: 50%;
+	    line-height: 2em;
+}
+
+#errr {
+  position: relative;
+  bottom: 300px;
+  width: 15%;
+  height: 50px;
+  border: 1px solid red;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+
+
+
