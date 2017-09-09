@@ -1,3 +1,7 @@
+<?php
+// Start the session
+session_start();
+?>
 <html>
 	<head>
 		<title>LOGIN </title>
@@ -24,16 +28,19 @@
 		</form>
 	</div></center>
 <?php
-@$a=$_POST["na"];
-@$b=$_POST["pa"];
+
+$_SESSION["name"]=$_POST["na"];
+$_SESSION["pass"]=$_POST["pa"];
+
 include('logindb.php');
 if(isset($_POST['sub']))
 {
-	$sql="select * from login where name = '$a' && pass = '$b'" ;
+	$sql="select * from login where name = '$_SESSION[name]' && pass = '$_SESSION[pass]'" ;
 	$ex=mysql_query($sql);
 	$exists = mysql_num_rows($ex);
 	if($exists == true){
 		header("Location: adminwelcome.php");
+                
 	}else {
 		echo "<div id='errr'>";
 		echo "<p>Wrong user or pass</p>";

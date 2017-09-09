@@ -1,3 +1,9 @@
+<?php
+ session_start();
+if (!isset($_SESSION['name'])) {
+header('Location: login.php');
+}
+?>
 <html>
 	<head>
 		<title></title>
@@ -18,7 +24,7 @@
 		<br />
 		 <input type="submit" name="Submit" formaction="adminupload.php" value="Upload" class="button1" />
 		 <input type="submit" name="Submit" formaction="adminarchieve.php" value="Gallery" class="button1" />
-		 <input type="submit" name="logout" formaction="index.php" value="logout" class="button1" />
+		 <input type="submit" name="logout" formaction="logout.php" value="logout" class="button1" />
 			 </form>
 	</div></center>
 

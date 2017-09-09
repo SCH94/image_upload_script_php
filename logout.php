@@ -1,3 +1,5 @@
 <?php
-echo "logout";
+session_start();
+session_destroy($_SESSION["name"]);
+header("Location: login.php");
 ?>

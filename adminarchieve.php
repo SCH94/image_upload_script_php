@@ -1,3 +1,9 @@
+<?php
+ session_start();
+if (!isset($_SESSION['name'])) {
+header('Location: login.php');
+}
+?>
 <head>
 <title></title>
 <link href="style/arc_style.css" type="text/css" rel="stylesheet"/>

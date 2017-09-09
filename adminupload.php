@@ -1,4 +1,10 @@
 <?php
+ session_start();
+if (!isset($_SESSION['name'])) {
+header('Location: login.php');
+}
+?>
+<?php
 include('config.php');
 $target_dir = "photos/";
 $target_file = $target_dir . basename($_FILES["image"]["name"]);//basename return filename
