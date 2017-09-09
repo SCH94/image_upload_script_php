@@ -8,3 +8,4 @@ simple image uploading script writen in php.
 ## Updates
 
 *Added session tracking.
+*Fixed Delete Buttons.
