@@ -19,10 +19,10 @@ include('config.php');
 $result = mysql_query("SELECT * FROM photos");
 while($row = mysql_fetch_array($result))
 {
-echo '<div id="imagelist">';
+echo '<div class="imagelist">';
 echo '<a href="'.$row['location'].'" target="_blank"><p><img src="'.$row['location'].'"></p></a>';
 echo '<a href="'.$row['location'].'" target="_blank"><p id="caption">'.$row['caption'].' </p></a>';
-echo ' <center><a href="download.php?nama='.$row['location'].'"><input type="submit" name="dow "value="download" id="button2"/></a></center>';
+echo ' <center><a href="download.php?nama='.$row['location'].'"><input type="submit" name="dow "value="download" class="button1"/></a></center>';
 echo '</div>';
 }
 ?>
